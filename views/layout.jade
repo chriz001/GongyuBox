@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    block head
+      title= title
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel='stylesheet', href='/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/css/basic.css')
+      link(rel='stylesheet', href='/css/dropzone.css')
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900')
+      script(src='/js/jquery.min.js', type="text/javascript")
+      script(src='/js/bootstrap.min.js', type='text/javascript')
+      script(src='/js/dropzone.js', type="text/javascript")
+  body
+    .container
+      .header
+        if authorised
+          .pull-right
+            a(href="/user")
+              span.glyphicon.glyphicon-bookmark
+              | &nbsp;Your GongyuBox
+      h1
+        a(href="/") gongyuBox
+      block content

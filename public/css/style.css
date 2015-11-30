@@ -1,0 +1,132 @@
+body{
+  background: #2b98e3;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  color: #fff;
+  font-size: 18px;
+}
+
+h1{
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 50px;
+  }
+}
+h1 a{
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+}
+h1 a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  h1 a {
+    font-size: 45px;
+  }
+}
+
+h2{
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 88px;
+  }
+}
+
+h3{
+  color: #fff;
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 45px;
+  }
+}
+
+.btn{
+  background: #2072aa;
+  border: 0;
+  padding: 20px 30px;
+  color: #fff;
+}
+
+.btn:hover{
+  color: #fff;
+  background-color: #11517e;
+}
+
+.btn-start{
+  margin-top: 25px;
+  font-weight: 400;
+}
+
+.lead{
+  color: #000;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.header{
+  height: 80px;
+}
+.header a{
+  color: #000;
+  text-decoration: none;
+  padding: 30px 10px;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+}
+.header a:hover{
+  color: #fff;
+}
+
+.dropzone {
+  border: dashed 2px #11517e;
+  min-height: 150px;
+  background: #fff;
+  padding: 54px 54px;
+  border-radius: 6px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.dz-message{
+  color: #000;
+}
+.dz-message .icon{
+  font-size: 40px;
+}
+
+.zeroclipboard-is-hover{
+  color: #fff;
+  background-color: #11517e;
+}
+
+#mybox-url input {
+  background: transparent;
+  cursor: default;
+  border-color: #2072aa;
+  color: #fff;
+  height: 64px;
+}
+
+.jumbotron{
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 52px;
+  }
+}

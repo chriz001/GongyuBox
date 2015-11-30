@@ -1,0 +1,17 @@
+extends layout
+
+block append head
+  script(src='/js/ZeroClipboard.min.js', type='text/javascript')
+  script(src='/js/main.js', type='text/javascript')
+
+block content
+  h3 Your gongyuBox Url:
+  p Share this URL with anyone you wish to recieve files from.
+  br
+  #mybox-url.input-group
+    input.form-control.input-lg(type="text", value="#{url}", readonly)
+    span.input-group-btn
+      a.copy-button.btn.btn-default.btn-lg(type="button", data-complete-title="copied!", data-title="copy to clipboard" data-clipboard-text="#{url}")
+        span.glyphicon.glyphicon-copy(aria-hidden="true")
+      a.visit-button.btn.btn-default.btn-lg(href="#{url}" type="button", data-title="visit page")
+        span.glyphicon.glyphicon-share-alt(aria-hidden="true")

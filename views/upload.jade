@@ -1,0 +1,17 @@
+extends layout
+
+block append head
+  script(type="text/javascript").
+    Dropzone.options.myAwesomeDropzone = {
+      maxFilesize: 30
+    }
+
+block content
+  h2 Upload Files.
+  p.lead You have been Invited to share files with a friend.
+  form.dropzone(action='/upload')
+    input(type='hidden', name='uid', value=userId)
+    div.dz-message
+      span.icon.glyphicon.glyphicon-cloud-upload
+      h4
+        | Drop files here or click to upload.
